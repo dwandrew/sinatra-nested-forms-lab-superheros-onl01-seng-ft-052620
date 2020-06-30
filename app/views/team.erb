@@ -1,3 +1,36 @@
+<% # The form should have fields for the name of a superhero team and their motto.
+# There should be form inputs for each of the three superhero members' name, power, and bio. %>
+<h1>Create Team<h1>
+
+<form method ="POST" action="teams">
+<h2> "Create a Team and Heroes!"</h2>
+  <label for="tname">Team name:</label><br>
+  <input type="text" id="tname" name="team[name]"><br>
+  <label for="tmotto">Team Motto:</label><br>
+  <input type="text" id="tmotto" name="team[motto]">
+ 
+  <h2> Hero 1</h2>
+  <label for="member1_name">Hero's Name:</label><br>
+  <input type="text" id="member1_name" name="team[members][][name]"><br>
+  <label for="member1_power">Hero's Power:</label><br>
+  <input type="text" id="member1_power" name="team[members][][power]"><br>
+  <label for="member1_bio">Hero's Bio</label><br>
+  <textarea id="member1_bio" name="team[members][][bio]"></textarea><br>
+  <h2> Hero 2</h2>
+  <label for="member2_name">Hero's Name:</label><br>
+  <input type="text" id="member2_name" name="team[members][][name]"><br>
+  <label for="member2_power">Hero's Power:</label><br>
+  <input type="text" id="member2_power" name="team[members][][power]"><br>
+  <label for="member2_bio">Hero's Bio</label><br>
+  <textarea id="member2_bio" name="team[members][][bio]"></textarea><br>
+  <h2> Hero 3</h2>
+  <label for="member3_name">Hero's Name:</label><br>
+  <input type="text" id="member3_name" name="team[members][][name]"><br>
+  <label for="member3_power">Hero's Power:</label><br>
+  <input type="text" id="member3_power" name="team[members][][power]"><br>
+  <label for="member3_bio">Hero's Bio</label><br>
+  <textarea id="member3_bio" name="team[members][][bio]"></textarea><br>
 
 
-
+  <input type="submit" id ="submit" value="Submit">
+  </form>
